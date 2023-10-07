@@ -27,7 +27,7 @@ def AreaMarker(m):
 
         # エリア名を直接テキストとして配置
         folium.Marker(location=centroid, popup=area, icon=folium.DivIcon(icon_size=(50,12), icon_anchor=(0,0),
-                      html=f'<div style="font-size: 0.2pt; background-color: {get_color(area)}; '
+                      html=f'<div style="font-size: 8pt; background-color: {get_color(area)}; '
                            f'color: white; text-align: center; vertical-align: middle; line-height: 36px; '
                            f'border-radius: 5px;">{area}</div>')).add_to(m)
 
